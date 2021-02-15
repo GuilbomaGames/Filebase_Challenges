@@ -1,24 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ASL : MonoBehaviour
+namespace Challenges
 {
-    // Variable for age
-    // Variable for gender
-    // Variable for location
-
-    [SerializeField] private int age;
-    [SerializeField] private char gender;
-    [SerializeField] private string location;
-    
-    private void Update()
+    public class ASL : MonoBehaviour
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Variable for age
+        // Variable for gender
+        // Variable for location
+
+        [SerializeField] private int age;
+        [SerializeField] private char gender;
+        [SerializeField] private string location;
+    
+        private void Update()
         {
-            Debug.Log("Your age: " + age);
-            Debug.Log("Your gender: " + gender);
-            Debug.Log("Your location: " + location);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("Your age: " + age);
+                Debug.Log("Your gender: " + gender);
+                Debug.Log("Your location: " + location);
+            }
         }
     }
 }
