@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 1573597201}
+  m_LightingSettings: {fileID: 1560642062}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -382,11 +382,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 916821562}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f49781084da636b489c24b7b2f9e5539, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b4df22bd62bd83488b02261306df3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficultyID: 0
---- !u!850595691 &1573597201
+  dinnerBill: 20
+  tipCustom: 16.5
+--- !u!850595691 &1560642062
 LightingSettings:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -610,10 +611,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Create a program that lets you select easy, medium, or hard through the
-    Inspector. When you hit the space key, it will print out the selected difficulty.
-    Example: "You selected Easy." You should be able to change the difficulty at
-    runtime.'
+  m_Text: 'Create a program that will calculate the prefered tip for a dinner bill.
+    For example, your meal cost $20. Have 3 suggested tip values: 15%, 20% and 25%.
+    Include support for a custom percent tip and calculate the tip amount and total
+    bill. Use the inspector to input your data. Example Print:                                                                                                                                                                                                                     
+    "Your bill is $20"                                                                                                
+    "15% tip = $3 with a final total of: $23"                                                                                                                                                 
+    "20% tip = $4 with a final total of: $24"                                                                       
+    "25% tip = $5 with a final total of: $25"                                                                    
+    "Your custom tip of 18.5% = $3.70 with a final total of $23.70"'
 --- !u!222 &1624057720
 CanvasRenderer:
   m_ObjectHideFlags: 0
